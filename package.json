@@ -1,0 +1,28 @@
+{
+  "name": "reduce-dict-by-key-qualifiers",
+  "version": "0.0.1",
+  "description": "Reduce multiple items in a dictionary with the same label by the key with the most applicable qualifiers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andytuba/reduce-dict-by-key-qualifiers.git"
+  },
+  "keywords": [
+    "tracery"
+  ],
+  "author": "andytuba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andytuba/reduce-dict-by-key-qualifiers/issues"
+  },
+  "homepage": "https://github.com/andytuba/reduce-dict-by-key-qualifiers#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
