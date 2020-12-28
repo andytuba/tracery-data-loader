@@ -1,14 +1,5 @@
 const evaluate = require("../src/evaluate");
 
-// Fri, 02 Feb 1996 03:04:05 GMT	  
-const environment = {
-	now: new Date(Date.UTC(96, 1, 2, 3, 4, 5)),
-	day: 5,
-	date: 2,
-	fullYear: 1996,
-	hours: 3,
-	minutes: 4,
-};
 const compare = (attr, op, value) => value === "true";
 
 describe("if selector is empty", () => {
