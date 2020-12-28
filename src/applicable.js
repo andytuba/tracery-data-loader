@@ -3,7 +3,7 @@ const applicable = (evaluate) => (parsedKey) => {
 		return false;
 	}
 
-	return typeof parsedKey.label === 'string' && parsedKey.label.length;
+	return typeof parsedKey.label === 'string' && parsedKey.label.length >= 1;
 }
 
 module.exports = applicable;

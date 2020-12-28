@@ -1,30 +1,30 @@
-const applicable = require('src/applicable');
+const applicable = require("../src/applicable");
 
-test('if item does not have label', () => {
-	test('then it is not applicable', () => {
+describe("if item does not have label", () => {
+	test("then it is not applicable", () => {
 		const evaluate = () => false;
-		expect(applicable(evaluate)({}).toBe(false);
-		expect(applicable(evaluate)({ label: null }).toBe(false);
-		expect(applicable(evaluate)({ label: false }).toBe(false);
-		expect(applicable(evaluate)({ label: 0 }).toBe(false);
-		expect(applicable(evaluate)({ label: '' }).toBe(false);
+		expect(applicable(evaluate)({})).toBeFalsy();
+		expect(applicable(evaluate)({ label: null })).toBeFalsy();
+		expect(applicable(evaluate)({ label: false })).toBeFalsy();
+		expect(applicable(evaluate)({ label: 0 })).toBeFalsy();
+		expect(applicable(evaluate)({ label: "" })).toBeFalsy();
 	});
 });
 
-test('if item only has label', () => {
+describe("if item only has label", () => {
 	test("then it is applicable if it's a string", () => {
 		const evaluate = () => false;
-		expect(applicable(evaluate)({ label: 'a'}).toBe(true);
-		expect(applicable(evaluate)({ label: 'aaaa'}).toBe(true);
-		expect(applicable(evaluate)({ label: 1 }).toBe(false);
+		expect(applicable(evaluate)({ label: "a"})).toEqual(true);
+		expect(applicable(evaluate)({ label: "aaaa"})).toEqual(true);
+		expect(applicable(evaluate)({ label: 1 })).toBeFalsy();
 	});
 });
 
-test('if item has qualifiers', () => {
+describe("if item has qualifiers", () => {
 	test("then it is applicable if it's a string", () => {
 		const evaluate = () => false;
-		expect(applicable(evaluate)({ label: 'a'}).toBe(true);
-		expect(applicable(evaluate)({ label: 'aaaa'}).toBe(true);
-		expect(applicable(evaluate)({ label: 1 }).toBe(false);
+		expect(applicable(evaluate)({ label: "a"})).toEqual(true);
+		expect(applicable(evaluate)({ label: "aaaa"})).toEqual(true);
+		expect(applicable(evaluate)({ label: 1 })).toBeFalsy();
 	});
 });

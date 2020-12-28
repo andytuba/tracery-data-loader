@@ -1,4 +1,4 @@
-const parser = require('src/parser');
+const parser = require('../src/parser');
 
 test('can parse plain label', () => {
 	const result = parser.parse('a plain label');
