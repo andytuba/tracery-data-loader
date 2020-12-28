@@ -14,8 +14,8 @@ describe("if item does not have label", () => {
 describe("if item only has label", () => {
 	test("then it is applicable if it's a string", () => {
 		const evaluate = () => false;
-		expect(applicable(evaluate)({ label: "a"})).toEqual(true);
-		expect(applicable(evaluate)({ label: "aaaa"})).toEqual(true);
+		expect(applicable(evaluate)({ label: "a" })).toEqual(true);
+		expect(applicable(evaluate)({ label: "aaaa" })).toEqual(true);
 		expect(applicable(evaluate)({ label: 1 })).toBeFalsy();
 	});
 });
@@ -23,8 +23,8 @@ describe("if item only has label", () => {
 describe("if item has qualifiers", () => {
 	test("then it is applicable if it's a string", () => {
 		const evaluate = () => false;
-		expect(applicable(evaluate)({ label: "a"})).toEqual(true);
-		expect(applicable(evaluate)({ label: "aaaa"})).toEqual(true);
+		expect(applicable(evaluate)({ label: "a" })).toEqual(true);
+		expect(applicable(evaluate)({ label: "aaaa" })).toEqual(true);
 		expect(applicable(evaluate)({ label: 1 })).toBeFalsy();
 	});
 });
