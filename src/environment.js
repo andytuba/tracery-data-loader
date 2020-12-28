@@ -1,7 +1,7 @@
 function environment(defaults) {
 	const result = {};
 
-	const now = defaults[now] instanceof Date ? defaults[now] : new Date();
+	const now = defaults["now"] instanceof Date ? defaults["now"] : new Date();
 
 	result.now = now;
 	result.day = now.getUTCDay();

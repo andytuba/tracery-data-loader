@@ -1,4 +1,5 @@
 const applicable = require('./applicable');
+const environment = require('./environment');
 const evaluate = require('./evaluate');
 const parser = require('./parser');
 const reduce = require('./reduce');
