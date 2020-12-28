@@ -3,6 +3,11 @@ const fs = require('fs');
 
 const grammarPegjs = fs.readFileSync('./src/grammar.pegjs', 'utf-8');
 
-const parser = peg.generate(grammarPegjs);
+const grammar = peg.generate(grammarPegjs);
 
-module.exports = parser;
+function parse(text) {
+    const result = grammar.parse(text);
+    return result;
+}
+
+module.exports = parse;

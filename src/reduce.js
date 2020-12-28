@@ -1,7 +1,7 @@
 
 const reduce = (applicable, parser) => (dict) => {
 	const parsedKeys = {};
-  Object.keys(dict).forEach(key => { parsedKeys[key] = parser.parse(key); });
+  Object.keys(dict).forEach(key => { parsedKeys[key] = parse(key); });
 	const applicableKeys = Set();
 	Object.keys(dict).forEach(key => { applicableKeys[key] = applicable(parsedKeys[key]); });
 
