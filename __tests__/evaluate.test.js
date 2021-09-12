@@ -1,4 +1,4 @@
-const evaluate = require("../src/evaluate");
+const evaluate = require("../src/legacy-modules/evaluate");
 
 const compare = (attr, op, value) => value === "true";
 

@@ -1,4 +1,4 @@
-const applicable = require("../src/applicable");
+const applicable = require("../src/legacy-modules/applicable");
 
 describe("if item does not have label", () => {
 	test("then it is not applicable", () => {

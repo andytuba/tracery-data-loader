@@ -1,4 +1,4 @@
-const _compare = require("../src/compare");
+const _compare = require("../src/legacy-modules/compare");
 
 // Fri, 02 Feb 1996 03:04:05 GMT	  
 const compare = _compare({

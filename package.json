@@ -1,14 +1,14 @@
 {
-  "name": "reduce-dict-by-key-qualifiers",
-  "version": "0.0.1",
-  "description": "Reduce multiple items in a dictionary with the same label by the key with the most applicable qualifiers",
+  "name": "tracery-data-loader",
+  "version": "0.0.2",
+  "description": "Load static or dynamic data into a Tracery grammar and return modifiers for transforming/resolving values",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andytuba/reduce-dict-by-key-qualifiers.git"
+    "url": "git+https://github.com/andytuba/tracery-data-loader.git"
   },
   "keywords": [
     "tracery"
@@ -16,13 +16,14 @@
   "author": "andytuba",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andytuba/reduce-dict-by-key-qualifiers/issues"
+    "url": "https://github.com/andytuba/tracery-data-loader/issues"
   },
-  "homepage": "https://github.com/andytuba/reduce-dict-by-key-qualifiers#readme",
+  "homepage": "https://github.com/andytuba/tracery-data-loader#readme",
   "devDependencies": {
     "jest": "^26.6.3"
   },
   "dependencies": {
-    "pegjs": "^0.10.0"
+    "pegjs": "^0.10.0",
+    "corpora-project": "^0.2.0"
   }
 }

@@ -1,4 +1,4 @@
-const environment = require('../src/environment');
+const environment = require('../src/legacy-modules/environment');
 
 test('given a default value for now, decompose that date into properties', () => {
     expect(environment({

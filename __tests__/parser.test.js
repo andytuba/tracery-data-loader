@@ -1,4 +1,4 @@
-const parse = require('../src/parser');
+const parse = require('../src/legacy-modules/parser');
 
 test('can parse plain label', () => {
    const result = parse('a plain label');
