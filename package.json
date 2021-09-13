@@ -1,6 +1,6 @@
 {
   "name": "tracery-data-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Load static or dynamic data into a Tracery grammar and return modifiers for transforming/resolving values",
   "main": "src/index.js",
   "scripts": {
@@ -23,7 +23,8 @@
     "jest": "^26.6.3"
   },
   "dependencies": {
-    "pegjs": "^0.10.0",
-    "corpora-project": "^0.2.0"
+    "corpora-project": "^0.2.0",
+    "dayjs": "^1.10.7",
+    "pegjs": "^0.10.0"
   }
 }
